@@ -1,0 +1,16 @@
+title Webdriver Test
+
+Browser->LoadBalancer: Submit test request for chrome
+LoadBalancer->Selenium Hub: Forward the request
+Selenium Hub->Chrome Node: Forward the request
+Chrome Node-->Chrome Node: Launch headless chrome \n and execute the test
+Chrome Node-->Selenium Hub: Return back the response
+Selenium Hub-->LoadBalancer: Return response
+LoadBalancer-->Browser: Show results
+Browser->LoadBalancer: Submit test request for Firefox
+LoadBalancer->Selenium Hub: Forward the request
+Selenium Hub->Firefox Node: Forward the request
+Firefox Node-->Firefox Node: Launch headless chrome \n and execute the test
+Firefox Node-->Selenium Hub: Return back the response
+Selenium Hub-->LoadBalancer: Return response
+LoadBalancer-->Browser: Show results

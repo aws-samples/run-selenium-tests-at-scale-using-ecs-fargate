@@ -1,0 +1,13 @@
+
+.vscode/settings.json
+cdk.out
+coverage/*
+.DS_Store
+node_modules/*
+test-reports/*
+tsconfig.jest.json
+yarn.lock
+cdk.context.json
+sample-test-function/node_modules/*
+sample-test-function/reports/*
+sample-test-function/package-lock.json

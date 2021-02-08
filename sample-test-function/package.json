@@ -1,0 +1,26 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "A simple Google test to demonstrate how the selenium grid in Fargate works",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "keywords": [
+    "aws",
+    "e2e",
+    "wdio"
+  ],
+  "author": "taktakpeops",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^5.18.7"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^5.18.7",
+    "@wdio/mocha-framework": "^6.1.0",
+    "@wdio/spec-reporter": "^5.18.7",
+    "@wdio/sync": "^6.1.0",
+    "@wdio/config": "^6.11.0"
+  }
+}
