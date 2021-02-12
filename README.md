@@ -1,4 +1,4 @@
-# Run integration and regression tests in scale
+# Run selenium tests at scale using ECS Fargate
 
 This article talks about an approach that can help customers run integration and regression tests quicker and cheaper to improve the CI/CD process.
 
