@@ -208,7 +208,7 @@ export class SeleniumGridConstruct extends cdk.Construct {
       },
       image: image+':'+this.seleniumVersion,
       entryPoint: ['sh', '-c'],
-      command: ["PRIVATE=$(curl -s http://169.254.170.2/v2/metadata | jq -r '.Containers[1].Networks[0].IPv4Addresses[0]') ; export REMOTE_HOST=\"http://$PRIVATE:5555\" ; /opt/bin/entry_point.sh"],
+      command: ["PRIVATE=$(curl -s http://169.254.170.2/v2/metadata | jq -r '.Containers[0].Networks[0].IPv4Addresses[0]') ; export REMOTE_HOST=\"http://$PRIVATE:5555\"; export SE_OPTS=\"-host $PRIVATE -port 5555\" ; /opt/bin/entry_point.sh"],
     });
 
     // Create autoscaling policy
@@ -260,6 +260,7 @@ export class SeleniumGridConstruct extends cdk.Construct {
       minHealthyPercent: 75,
       maxHealthyPercent: 100,      
       securityGroups: [securityGroup],
+      enableExecuteCommand: true,
     });
   }
 
