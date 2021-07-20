@@ -89,7 +89,7 @@ npm install -g yarn
 
 ```bash
 mkdir scaling-test-execution && cd scaling-test-execution
-git clone hhttps://github.com/hariohmprasath/scaled-test-execution.git .
+git clone https://github.com/hariohmprasath/scaled-test-execution.git .
 ```
 
 - As the code is created as a CDK construct, the following parameters can be customized as part of the deployment
