@@ -116,7 +116,7 @@ cdk deploy --require-approval never
 The complete selenium hub load balancer URL will look like.
 
 ```bash
-http://<<Selenium-Hub-DNS>>:4444/wb/hub
+http://<<Selenium-Hub-DNS>>:4444/wd/hub
 ```
 
 # Testing
